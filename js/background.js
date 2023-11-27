@@ -8,20 +8,20 @@ const images = ['노동요.jpg', '도대체....jpg', '될 대로 되라지.png',
 '오랫동안 당신을 기다렸다우.png', '짱구.jpg', "포뇨.jpg", "starry night.jpg"]
 const selectedImage = images[Math.floor(Math.random()*images.length)];
 
-const imgnseries = new Array();
-while(imgnseries.length < images.length) {
-    if(!(selectedImage in imgnseries)) {
-        imgnseries.push(selectedImage);
-        bgImage.src = `img/${selectedImage}`;
-        document.body.appendChild(bgImage);
-    }
-} 
+// const imgnseries = new Array();
+// while(imgnseries.length < images.length) {
+//     if(!(selectedImage in imgnseries)) {
+//         imgnseries.push(selectedImage);
+//         bgImage.src = `img/${selectedImage}`;
+//         document.body.appendChild(bgImage);
+//     }
+// } 
 
-if(imgnseries.length == images.length) {
-    imgnseries = []
-}
+// if(imgnseries.length == images.length) {
+//     imgnseries = []
+// }
 
 const bgImage = document.createElement("img");
-console.log(bgImage);
-// bgImage.src = `img/${selectedImage}`;
-// document.body.appendChild(bgImage);
+// console.log(bgImage);
+bgImage.src = `img/${selectedImage}`;
+document.body.appendChild(bgImage);
