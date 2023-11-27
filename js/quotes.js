@@ -49,20 +49,6 @@ const quotes = [
 ];
 
 
-
-// const quotenseries = new Array();
-// for(i = 0; i < quotes.length; i++) {
-//     if(!(todayQuote.quote in imgnseries)) {
-//         quotenseries.push(todayQuote.quote);
-//         quote.innerText = todayQuote.quote;
-//         author.innerText = todayQuote.author;
-//     }
-// }
-
-// if(quotenseries.length == images.length) {
-//     imgnseries = []
-// }
-
 const quote = document.querySelector('#quote span:first-child')
 const author = document.querySelector('#quote span:last-child')
 
@@ -73,5 +59,6 @@ author.innerText = "오늘의 작가";
 console.log(quotes[Math.round(Math.random()*quotes.length)]);
 const todayQuote = quotes[Math.floor(Math.random()*quotes.length)];
 console.log(todayQuote);
-// quote.innerText = todayQuote.quote;
-// author.innerText = todayQuote.author;
+quote.innerText = todayQuote.quote;
+author.innerText = todayQuote.author;
+
